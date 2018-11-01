@@ -8,7 +8,6 @@ export ZSH=$HOME/.oh-my-zsh
 # node version manger
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 # Project VI
 export GRAPHQL_DEBUG=true
@@ -18,8 +17,16 @@ export DISABLE_SERVER_RENDERING=false
 export VAULT_ADDR=XXXXXXXXXX
 export VAULT_AUTH_GITHUB_TOKEN=XXXXXXXXXX
 
+# Drone
+export DRONE_SERVER=XXXXXXXXXX
+export DRONE_TOKEN=XXXXXXXXXX
+
 # NYT5 Sandbox
 source /opt/nyt/sbx/.nyt
+
+# VI Sandbox
+export GRAPHQL_DEBUG=true
+export DISABLE_SERVER_RENDERING=false
 
 # GCP
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
