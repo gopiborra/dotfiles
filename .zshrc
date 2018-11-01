@@ -9,9 +9,12 @@ export ZSH=$HOME/.oh-my-zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Project VI
+# VI Sandbox
 export GRAPHQL_DEBUG=true
 export DISABLE_SERVER_RENDERING=false
+
+# NYT5 Sandbox
+source /opt/nyt/sbx/.nyt
 
 # Vault
 export VAULT_ADDR=XXXXXXXXXX
@@ -20,13 +23,6 @@ export VAULT_AUTH_GITHUB_TOKEN=XXXXXXXXXX
 # Drone
 export DRONE_SERVER=XXXXXXXXXX
 export DRONE_TOKEN=XXXXXXXXXX
-
-# NYT5 Sandbox
-source /opt/nyt/sbx/.nyt
-
-# VI Sandbox
-export GRAPHQL_DEBUG=true
-export DISABLE_SERVER_RENDERING=false
 
 # GCP
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
